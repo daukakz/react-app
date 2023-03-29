@@ -12,7 +12,6 @@ import "./App.css";
 const App = () => (
  
   <div className="App">
-    <Navbar/>
     <Routes>
     <Route path="/home" element= { <Homepage />} />
     <Route path="/account" element={ <Account />} /> 
