@@ -1,29 +1,22 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import { Account } from "./pages/Accountpage";
+import { Homepage } from "./pages/Homepage";
+import { Navbar } from "./components/navbar/Navbar";
+import { Header } from "./containers/header/Header";
 
-import {
-  Footer,
-  Blog,
-  Possibility,
-  Features,
-  WhatDota,
-  Header,
-} from "./containers";
-import { CTA, Brand, Navbar, SubmitForm } from "./components";
 
 import "./App.css";
+
 
 const App = () => (
  
   <div className="App">
-   
-    <div className="gradient__bg">
-       <Navbar/>
-    </div>  
+    <Navbar/>
     <Routes>
-    <Route path="/home" element= { <Header />} />
-    <Route path="/account" element={<SubmitForm/>} /> 
-    </Routes>
+    <Route path="/home" element= { <Homepage />} />
+    <Route path="/account" element={ <Account />} /> 
+    </Routes>   
   </div>
 
 );

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./submitForm.css";
 import axios from "axios";
 
-class PostForm extends Component {
+class SubmitForm extends Component {
   constructor(props) {
     super(props);
 
@@ -51,4 +51,4 @@ class PostForm extends Component {
   }
 }
 
-export default PostForm;
+export { SubmitForm };

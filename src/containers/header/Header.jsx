@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
-import sven from "./assets/sven.png";
-import { Footer, Blog, Possibility, Features, WhatDota } from "./containers";
-import { Navbar, Brand, CTA } from "./components";
+import sven from "../../assets/sven.png";
+import { Brand } from "../../components/brand/Brand";
+import { Features } from "../../containers/features/Features";
+import { WhatDota } from "../whatDota/WhatDota";
+import { CTA } from "../../components/cta/CTA";
+import { Blog } from "../blog/Blog";
+import { Footer } from "../footer/Footer";
+import { Possibility } from "../possibility/Possibility";
 
 const Header = () => {
   const [number, setNumber] = useState(0);
@@ -60,4 +65,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export { Header };

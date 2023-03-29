@@ -1,6 +1,6 @@
 import React from "react";
 import "./whatDota.css";
-import { Feature } from "../../components";
+import { Feature } from "../../components/feature/Feature";
 
 const WhatDota = () => {
   return (
@@ -34,4 +34,4 @@ const WhatDota = () => {
   );
 };
 
-export default WhatDota;
+export { WhatDota };

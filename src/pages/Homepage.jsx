@@ -1,17 +1,17 @@
 import { Navbar } from "../components/navbar/Navbar";
-import { SubmitForm } from "../components/submit-form/SubmitForm";
+import { Header } from "../containers/header/Header";
 import { Footer } from "../containers/footer/Footer";
 
-const Account = () => {
+const Homepage = () => {
   <div className="Account">
     <div className="gradient_bg">
       <Navbar />
     </div>
-    <SubmitForm />
+    <Header />
     <div className="gradient_bg">
       <Footer />
     </div>
   </div>;
 };
 
-export { Account };
+export { Homepage };
