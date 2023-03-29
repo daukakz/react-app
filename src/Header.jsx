@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
-import sven from "../../assets/sven.png";
+import sven from "./assets/sven.png";
+import { Footer, Blog, Possibility, Features, WhatDota } from "./containers";
+import { Navbar, Brand, CTA } from "./components";
 
 const Header = () => {
   const [number, setNumber] = useState(0);
@@ -32,6 +34,13 @@ const Header = () => {
             );
           })}
         </div> */}
+        <Brand />
+        <WhatDota />
+        <Features />
+        <Possibility />
+        <CTA />
+        <Blog />
+        <Footer />
 
         <div className="dota__header-content__heroes">
           {heroes.slice(0, 3).map((hero) => {

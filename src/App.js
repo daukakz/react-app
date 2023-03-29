@@ -16,23 +16,14 @@ import "./App.css";
 const App = () => (
  
   <div className="App">
-  
+   
     <div className="gradient__bg">
-      <Navbar />
+       <Navbar/>
     </div>  
     <Routes>
     <Route path="/home" element= { <Header />} />
-    <Route path="/signIn" element={<SubmitForm/>} /> 
-
-    <Route path="/" element= {<Brand />} />
-    <Route path="/" element= {<WhatDota />} />
-    <Route path="/" element= {<Features />} />
-    <Route path="/" element= {<Possibility/>} />
-    <Route path="/" element= {<CTA />} />
-    <Route path="/" element= {<Blog />} />
+    <Route path="/account" element={<SubmitForm/>} /> 
     </Routes>
-    <Footer />
-  
   </div>
 
 );

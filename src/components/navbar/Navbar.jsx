@@ -22,7 +22,7 @@ const Menu = () => (
       <a href="#blog">Contact</a>
     </p>
     <p>
-      <Link to="/signIn">Hello</Link>
+      <Link to="/account">Account</Link>
     </p>
   </>
 );
